@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <title>Rede Canais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        .relative {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            /* ajuste a posição esquerda conforme necessário */
+            z-index: 1;
+            /* adicione essa linha para garantir que a lupa fique acima do campo de busca */
+        }
+
+        input[type="text"] {
+            padding-left: 30px;
+            /* ajuste a largura do padding esquerdo para acomodar a lupa */
+        }
+
+        .relative i {
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-blue-900 text-white">
+        <div class="container mx-auto flex flex-wrap justify-between items-center py-4 px-6">
+            <div class="text-3xl font-bold">
+                DESIGN FILMES
+            </div>
+            <nav class="space-x-4">
+                <a class="hover:underline" href="#">ÚLTIMOS LANÇAMENTOS</a>
+                <a class="hover:underline" href="#">MELHOR AVALIAÇÃO (IMDB)</a>
+                <a class="hover:underline" href="#">MAIS VISITADOS</a>
+                <a class="hover:underline" href="#">OUTROS LANÇAMENTOS</a>
+            </nav>
+            <div class="relative mt-4 md:mt-0">
+                <input class="pl-8 pr-4 py-2 rounded-full bg-white text-black" placeholder="Pesquisa..." type="text" />
+                <i class="fas fa-search absolute left-2 top-2 text-gray-500"></i>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto py-6 px-6">
+        <div class="flex flex-wrap justify-center mb-6">
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">#</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">A</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">B</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">C</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">D</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">E</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">F</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">G</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">H</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">I</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">J</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">K</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">L</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">M</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">N</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">O</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">P</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">Q</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">R</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">S</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">T</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">U</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">V</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">W</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">X</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">Y</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 m-1 rounded">Z</button>
+        </div>
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Últimos FILMES Adicionados</h2>
+            <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded">VEJA MAIS</button>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div class="text-center">
+                <img alt="A Confissão (2022)" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">A Confissão (2022)</p>
+            </div>
+            <div class="text-center">
+                <img alt="Sex and the City: O Filme (2008)" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">Sex and the City: O Filme (2008)</p>
+            </div>
+            <div class="text-center">
+                <img alt="Pergunte-me Tudo (2014)" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">Pergunte-me Tudo (2014)</p>
+            </div>
+            <div class="text-center">
+                <img alt="Visões (2023)" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">Visões (2023)</p>
+            </div>
+            <div class="text-center">
+                <img alt="Tráfico Sexual (2023)" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">Tráfico Sexual (2023)</p>
+            </div>
+            <div class="text-center">
+                <img alt="Scooby-Doo e a Escola Assombrada" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">Scooby-Doo e a Escola Assombrada</p>
+            </div>
+            <div class="text-center">
+                <img alt="Poder Policial (2024)" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">Poder Policial (2024)</p>
+            </div>
+            <div class="text-center">
+                <img alt="O Fantasma da Ópera" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">O Fantasma da Ópera</p>
+            </div>
+            <div class="text-center">
+                <img alt="Coragem Sem Limites" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">Coragem Sem Limites</p>
+            </div>
+            <div class="text-center">
+                <img alt="A Tempestade" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">A Tempestade</p>
+            </div>
+            <div class="text-center">
+                <img alt="Top Gang" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">Top Gang</p>
+            </div>
+            <div class="text-center">
+                <img alt="Ajuste Final" class="w-full h-auto" src="https://placehold.co/200x300" />
+                <p class="mt-2">Ajuste Final</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        const searchInput = document.querySelector('input[type="text"]');
+        const movieList = document.querySelectorAll('.grid > div');
+
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            movieList.forEach((movie) => {
+                const movieTitle = movie.querySelector('p').textContent.toLowerCase();
+                if (movieTitle.includes(searchTerm)) {
+                    movie.style.display = 'block';
+                } else {
+                    movie.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
